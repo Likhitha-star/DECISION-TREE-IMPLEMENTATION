@@ -55,7 +55,7 @@ OUTPUT:
 === Tree Rules ===
 |--- petal length (cm) <= 2.45
 
-|   |--- class: 0
+|  |--- class: 0
 
 |--- petal length (cm) >  2.45
 
@@ -126,4 +126,8 @@ Accuracy: 1.00
    macro avg       1.00      1.00      1.00        30
    
 weighted avg       1.00      1.00      1.00        30
+
+![Image](https://github.com/user-attachments/assets/7c896f0c-58c9-4088-a999-04cb091f4f5e)
+
+![Image](https://github.com/user-attachments/assets/03fecf15-84cb-425a-b73a-5683d83db27e)
 
