@@ -54,19 +54,33 @@ OUTPUT:
 
 === Tree Rules ===
 |--- petal length (cm) <= 2.45
+
 |   |--- class: 0
+
 |--- petal length (cm) >  2.45
+
 |   |--- petal length (cm) <= 4.75
+
 |   |   |--- petal width (cm) <= 1.65
+
 |   |   |   |--- class: 1
+
 |   |   |--- petal width (cm) >  1.65
+
 |   |   |   |--- class: 2
+
 |   |--- petal length (cm) >  4.75
+
 |   |   |--- petal width (cm) <= 1.75
+
 |   |   |   |--- petal length (cm) <= 4.95
+
 |   |   |   |   |--- class: 1
+
 |   |   |   |--- petal length (cm) >  4.95
+
 |   |   |   |   |--- petal width (cm) <= 1.55
+
 |   |   |   |   |   |--- class: 2
 |   |   |   |   |--- petal width (cm) >  1.55
 |   |   |   |   |   |--- petal length (cm) <= 5.45
