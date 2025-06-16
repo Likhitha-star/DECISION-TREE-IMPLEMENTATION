@@ -38,6 +38,10 @@ y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(f"\nAccuracy: {accuracy:.2f}")
 
+# Classification report (move this BEFORE plot)
+print("\n=== Classification Report ===")
+print(classification_report(y_test, y_pred, target_names=iris.target_names))
+
 # Confusion matrix plot
 cm = confusion_matrix(y_test, y_pred)
 plt.figure(figsize=(6, 4))
@@ -49,6 +53,4 @@ plt.ylabel("True Label")
 plt.title("Confusion Matrix")
 plt.show()
 
-# Classification report
-print("\n=== Classification Report ===")
-print(classification_report(y_test, y_pred, target_names=iris.target_names))
+
